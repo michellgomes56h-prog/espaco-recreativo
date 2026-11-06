@@ -20,14 +20,17 @@ assets/src/*.svg        fontes vetoriais do mascote e logo provisórios
 tools/otimizar-imagens.py   gera AVIF/WebP 1x/2x/3x
 ```
 
-## Antes de publicar
-1. **Logo e astronauta**: substitua `assets/logo.png` e `assets/astronauta-hero.png` e rode
-   `python3 tools/otimizar-imagens.py` (senão o navegador continua mostrando as versões provisórias de `assets/img/`).
-2. **Fotos da galeria**: coloque as fotos reais em `assets/galeria/originais/` e rode o mesmo script;
-   depois ajuste `width/height`, `data-cat` (espaco | oficinas | rotina), `alt` e legenda de cada `<figure class="ph">`.
-3. **Depoimentos**: procure `SUBSTITUIR POR DEPOIMENTOS REAIS DO CLIENTE` no index.html.
-4. **Confirmações**: procure `CONFIRMAR` no index.html (horários dos meios turnos, itens inclusos,
-   faixa etária, refeições, leva/busca, domínio). Esses trechos aparecem em amarelo listrado no site de propósito.
+## Pendências
+Busque `PENDENTE` no index.html:
+1. **Faixa etária** (FAQ "Qual a idade das crianças atendidas?")
+2. **Horários dos meios turnos** manhã e tarde (seção Turnos; hoje mostra "Período da manhã/tarde")
+
+Do nosso lado: logo e astronauta oficiais (trocar `assets/logo.png` e `assets/astronauta-hero.png` e rodar
+`python3 tools/otimizar-imagens.py`) e o domínio definitivo.
+
+Para adicionar fotos à galeria: salve em `assets/galeria/06.webp`... e copie um `<figure class="ph">` no index.html.
+A seção de depoimentos foi retirada (os textos eram exemplos); o código do carrossel continua pronto caso
+a cliente envie depoimentos reais.
 
 ## Arquivos de publicação (já prontos)
 - `404.html` página de erro no estilo do site (configure no servidor/hospedagem como página 404)

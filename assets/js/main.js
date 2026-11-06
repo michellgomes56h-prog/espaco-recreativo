@@ -157,42 +157,44 @@
     } else if (e.key === 'Escape' && drawer.classList.contains('is-open')) setDrawer(false);
   });
 
-  /* ---------- Carrossel de depoimentos ---------- */
+  /* ---------- Carrossel de depoimentos (só roda se a seção existir) ---------- */
   const car = $('.carousel');
-  const track = $('.carousel__track', car);
-  const slides = $$('.testi', car);
-  const dotsBox = $('.dots', car);
-  let cur = 0, timer;
-  const dots = slides.map((_, i) => {
-    const b = document.createElement('button');
-    b.setAttribute('aria-label', `Depoimento ${i + 1}`);
-    b.addEventListener('click', () => { show(i); restart(); });
-    dotsBox.appendChild(b);
-    return b;
-  });
-  const show = i => {
-    cur = (i + slides.length) % slides.length;
-    track.style.transform = `translateX(-${cur * 100}%)`;
-    slides.forEach((s, k) => { s.classList.toggle('is-current', k === cur); s.setAttribute('aria-hidden', String(k !== cur)); });
-    dots.forEach((d, k) => { d.setAttribute('aria-current', String(k === cur)); d.setAttribute('aria-pressed', String(k === cur)); });
-  };
-  const play = () => { if (!reduce) timer = setInterval(() => show(cur + 1), 5500); };
-  const stop = () => clearInterval(timer);
-  const restart = () => { stop(); play(); };
-  $('.car-prev', car).addEventListener('click', () => { show(cur - 1); restart(); });
-  $('.car-next', car).addEventListener('click', () => { show(cur + 1); restart(); });
-  car.addEventListener('mouseenter', stop);
-  car.addEventListener('mouseleave', play);
-  car.addEventListener('focusin', stop);
-  car.addEventListener('focusout', play);
-  let tx = 0;
-  car.addEventListener('touchstart', e => { tx = e.touches[0].clientX; stop(); }, { passive: true });
-  car.addEventListener('touchend', e => {
-    const dx = e.changedTouches[0].clientX - tx;
-    if (Math.abs(dx) > 45) show(cur + (dx < 0 ? 1 : -1));
-    play();
-  });
-  show(0); play();
+  if (car) {
+    const track = $('.carousel__track', car);
+    const slides = $$('.testi', car);
+    const dotsBox = $('.dots', car);
+    let cur = 0, timer;
+    const dots = slides.map((_, i) => {
+      const b = document.createElement('button');
+      b.setAttribute('aria-label', `Depoimento ${i + 1}`);
+      b.addEventListener('click', () => { show(i); restart(); });
+      dotsBox.appendChild(b);
+      return b;
+    });
+    const show = i => {
+      cur = (i + slides.length) % slides.length;
+      track.style.transform = `translateX(-${cur * 100}%)`;
+      slides.forEach((s, k) => { s.classList.toggle('is-current', k === cur); s.setAttribute('aria-hidden', String(k !== cur)); });
+      dots.forEach((d, k) => { d.setAttribute('aria-current', String(k === cur)); d.setAttribute('aria-pressed', String(k === cur)); });
+    };
+    const play = () => { if (!reduce) timer = setInterval(() => show(cur + 1), 5500); };
+    const stop = () => clearInterval(timer);
+    const restart = () => { stop(); play(); };
+    $('.car-prev', car).addEventListener('click', () => { show(cur - 1); restart(); });
+    $('.car-next', car).addEventListener('click', () => { show(cur + 1); restart(); });
+    car.addEventListener('mouseenter', stop);
+    car.addEventListener('mouseleave', play);
+    car.addEventListener('focusin', stop);
+    car.addEventListener('focusout', play);
+    let tx = 0;
+    car.addEventListener('touchstart', e => { tx = e.touches[0].clientX; stop(); }, { passive: true });
+    car.addEventListener('touchend', e => {
+      const dx = e.changedTouches[0].clientX - tx;
+      if (Math.abs(dx) > 45) show(cur + (dx < 0 ? 1 : -1));
+      play();
+    });
+    show(0); play();
+  }
 
   /* ---------- FAQ: abre/fecha com animação de altura ---------- */
   $$('.qa').forEach(d => {
