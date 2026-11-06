@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -20 620 730">
+  <!-- Mascote PROVISÓRIO do Espaço Recreativo (astronauta sorrindo, fazendo joinha).
+       Substitua por /assets/astronauta-hero.png (arte oficial) e rode tools/otimizar-imagens.py -->
+  <defs>
+    <clipPath id="face"><ellipse cx="300" cy="245" rx="112" ry="98"/></clipPath>
+    <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#E3F1FB"/>
+    </linearGradient>
+    <linearGradient id="glove" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5CCBFA"/><stop offset="1" stop-color="#1FA6E6"/>
+    </linearGradient>
+    <radialGradient id="skin" cx=".5" cy=".42" r=".6">
+      <stop offset="0" stop-color="#FFE6CF"/><stop offset="1" stop-color="#FFD2AE"/>
+    </radialGradient>
+  </defs>
+  <g stroke="#0B3A66" stroke-width="9" stroke-linejoin="round" stroke-linecap="round" transform="rotate(-8 300 380)">
+    <!-- mochila -->
+    <rect x="165" y="300" width="270" height="215" rx="56" fill="#7DD3FC"/>
+    <rect x="182" y="330" width="26" height="120" rx="13" fill="#38BDF8" stroke-width="6"/>
+    <!-- pernas -->
+    <path d="M242 495 L230 590" stroke-width="84" fill="none"/>
+    <path d="M242 495 L230 590" stroke="url(#suit)" stroke-width="66" fill="none"/>
+    <path d="M358 495 L388 578" stroke-width="84" fill="none"/>
+    <path d="M358 495 L388 578" stroke="#F2F8FD" stroke-width="66" fill="none"/>
+    <!-- botas -->
+    <rect x="176" y="578" width="104" height="60" rx="28" fill="url(#glove)"/>
+    <rect x="344" y="566" width="104" height="60" rx="28" fill="url(#glove)" transform="rotate(-18 396 596)"/>
+    <!-- braço esquerdo (acenando para baixo) -->
+    <path d="M218 378 Q160 410 150 468" stroke-width="80" fill="none"/>
+    <path d="M218 378 Q160 410 150 468" stroke="#F4F9FD" stroke-width="62" fill="none"/>
+    <circle cx="149" cy="484" r="33" fill="url(#glove)"/>
+    <!-- tronco -->
+    <rect x="195" y="325" width="210" height="200" rx="84" fill="url(#suit)"/>
+    <rect x="210" y="452" width="180" height="28" rx="14" fill="#38BDF8" stroke-width="7"/>
+    <rect x="282" y="456" width="36" height="20" rx="6" fill="#FACC15" stroke-width="5"/>
+    <!-- painel do peito -->
+    <rect x="248" y="372" width="104" height="62" rx="16" fill="#E0F4FF" stroke-width="7"/>
+    <circle cx="274" cy="403" r="10" fill="#38BDF8" stroke-width="5"/>
+    <circle cx="300" cy="403" r="10" fill="#FACC15" stroke-width="5"/>
+    <circle cx="326" cy="403" r="10" fill="#FB7185" stroke-width="5"/>
+    <!-- gola -->
+    <rect x="222" y="340" width="156" height="34" rx="17" fill="#38BDF8"/>
+    <!-- antena -->
+    <path d="M300 84 V44" stroke-width="8"/>
+    <polygon transform="translate(300 32)" fill="#FACC15" stroke-width="6"
+      points="0,-24 6.5,-8.9 22.8,-7.4 10.5,3.4 14.1,19.4 0,11 -14.1,19.4 -10.5,3.4 -22.8,-7.4 -6.5,-8.9"/>
+    <!-- capacete -->
+    <circle cx="300" cy="232" r="152" fill="url(#suit)"/>
+    <path d="M178 150 A140 140 0 0 1 260 96" stroke="#FFFFFF" stroke-width="12" fill="none" opacity=".9"/>
+    <rect x="130" y="198" width="34" height="72" rx="14" fill="#38BDF8"/>
+    <rect x="436" y="198" width="34" height="72" rx="14" fill="#38BDF8"/>
+    <!-- rosto -->
+    <ellipse cx="300" cy="245" rx="112" ry="98" fill="url(#skin)" stroke="none"/>
+    <g clip-path="url(#face)">
+      <path d="M176 140 H424 V214 C400 206 384 192 372 172 C352 200 306 206 270 188 C254 206 222 214 180 226 Z"
+        fill="#7A4A2A" stroke-width="6"/>
+      <path d="M280 160 C296 172 318 176 340 170" stroke="#9B653F" stroke-width="6" fill="none"/>
+    </g>
+    <ellipse cx="300" cy="245" rx="112" ry="98" fill="none"/>
+    <path d="M238 224 Q256 213 274 221" stroke-width="6" fill="none"/>
+    <path d="M326 221 Q344 213 362 224" stroke-width="6" fill="none"/>
+    <ellipse cx="258" cy="254" rx="14" ry="19" fill="#0B3A66" stroke="none"/>
+    <ellipse cx="342" cy="254" rx="14" ry="19" fill="#0B3A66" stroke="none"/>
+    <circle cx="263" cy="246" r="5.5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="347" cy="246" r="5.5" fill="#FFFFFF" stroke="none"/>
+    <circle cx="225" cy="288" r="17" fill="#FB7185" opacity=".45" stroke="none"/>
+    <circle cx="375" cy="288" r="17" fill="#FB7185" opacity=".45" stroke="none"/>
+    <path d="M262 286 Q300 334 338 286 Q300 300 262 286 Z" fill="#A3233F" stroke-width="6"/>
+    <ellipse cx="300" cy="303" rx="14" ry="6" fill="#FB7185" stroke="none"/>
+    <!-- brilho do visor -->
+    <path d="M206 205 Q218 172 252 158" stroke="#FFFFFF" stroke-width="9" fill="none" opacity=".75"/>
+    <!-- braço direito (joinha) -->
+    <path d="M386 380 Q482 410 502 338" stroke-width="80" fill="none"/>
+    <path d="M386 380 Q482 410 502 338" stroke="#F4F9FD" stroke-width="62" fill="none"/>
+    <rect x="490" y="212" width="32" height="76" rx="16" fill="url(#glove)"/>
+    <rect x="468" y="272" width="74" height="64" rx="24" fill="url(#glove)"/>
+    <path d="M476 294 H500 M476 312 H500" stroke-width="6"/>
+  </g>
+</svg>

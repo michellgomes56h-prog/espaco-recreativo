@@ -1,0 +1,14 @@
+{
+  "name": "Espaço Recreativo",
+  "short_name": "Espaço Recreativo",
+  "description": "Recreação Infantil & Contraturno em Santo Ângelo/RS",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FFFFFF",
+  "theme_color": "#38BDF8",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "assets/img/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "assets/img/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

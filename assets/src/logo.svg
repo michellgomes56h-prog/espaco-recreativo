@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+  <!-- Logo PROVISÓRIO. Substitua /assets/logo.png pelo logo oficial do Espaço Recreativo. -->
+  <defs>
+    <radialGradient id="sky" cx=".35" cy=".3" r=".85">
+      <stop offset="0" stop-color="#BAE6FD"/><stop offset=".6" stop-color="#7DD3FC"/><stop offset="1" stop-color="#38BDF8"/>
+    </radialGradient>
+    <clipPath id="c"><circle cx="200" cy="200" r="196"/></clipPath>
+    <clipPath id="face"><ellipse cx="300" cy="245" rx="112" ry="98"/></clipPath>
+    <linearGradient id="glove" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#5CCBFA"/><stop offset="1" stop-color="#1FA6E6"/>
+    </linearGradient>
+  </defs>
+  <circle cx="200" cy="200" r="196" fill="url(#sky)"/>
+  <g clip-path="url(#c)" stroke="#0B3A66" stroke-linejoin="round" stroke-linecap="round">
+    <g fill="#FFFFFF" stroke="none" opacity=".95">
+      <circle cx="70" cy="80" r="4"/><circle cx="340" cy="250" r="5"/><circle cx="110" cy="40" r="3"/><circle cx="360" cy="310" r="3"/>
+    </g>
+    <polygon transform="translate(60 150) scale(.6)" fill="#FACC15" stroke-width="6" points="0,-24 6.5,-8.9 22.8,-7.4 10.5,3.4 14.1,19.4 0,11 -14.1,19.4 -10.5,3.4 -22.8,-7.4 -6.5,-8.9"/>
+    <path d="M-10 380 Q40 330 100 352 Q150 312 210 350 Q270 318 320 352 Q370 330 420 360 V420 H-10 Z" fill="#FFFFFF" stroke="none"/>
+    <!-- corpo -->
+    <rect x="92" y="300" width="150" height="160" rx="60" fill="#FFFFFF" stroke-width="8"/>
+    <rect x="128" y="330" width="78" height="44" rx="12" fill="#E0F4FF" stroke-width="6"/>
+    <circle cx="148" cy="352" r="7" fill="#38BDF8" stroke-width="4"/><circle cx="167" cy="352" r="7" fill="#FACC15" stroke-width="4"/><circle cx="186" cy="352" r="7" fill="#FB7185" stroke-width="4"/>
+    <!-- mastro e bandeira -->
+    <path d="M262 92 V340" stroke-width="8"/>
+    <circle cx="262" cy="86" r="9" fill="#FACC15" stroke-width="6"/>
+    <path d="M262 104 Q292 92 318 104 T374 104 V184 Q346 172 318 184 T262 184 Z" fill="#FFFFFF" stroke-width="6"/>
+    <text x="318" y="138" font-family="Fredoka, Nunito, sans-serif" font-weight="700" font-size="20" fill="#0B3A66" stroke="none" text-anchor="middle">ESPAÇO</text>
+    <text x="318" y="164" font-family="Fredoka, Nunito, sans-serif" font-weight="700" font-size="14.5" fill="#0369A1" stroke="none" text-anchor="middle">RECREATIVO</text>
+    <!-- braço segurando o mastro -->
+    <path d="M220 330 Q250 300 258 262" stroke-width="44" fill="none"/>
+    <path d="M220 330 Q250 300 258 262" stroke="#FFFFFF" stroke-width="30" fill="none"/>
+    <circle cx="262" cy="258" r="20" fill="url(#glove)" stroke-width="6"/>
+    <!-- cabeça (mesma do mascote) -->
+    <g transform="translate(166 205) scale(.68) translate(-300 -232)" stroke-width="10">
+      <path d="M300 84 V48" stroke-width="9"/>
+      <circle cx="300" cy="42" r="12" fill="#FACC15"/>
+      <circle cx="300" cy="232" r="152" fill="#FFFFFF"/>
+      <rect x="130" y="198" width="34" height="72" rx="14" fill="#38BDF8"/>
+      <rect x="436" y="198" width="34" height="72" rx="14" fill="#38BDF8"/>
+      <ellipse cx="300" cy="245" rx="112" ry="98" fill="#FFDDBF" stroke="none"/>
+      <g clip-path="url(#face)">
+        <path d="M176 140 H424 V214 C400 206 384 192 372 172 C352 200 306 206 270 188 C254 206 222 214 180 226 Z" fill="#7A4A2A" stroke-width="7"/>
+      </g>
+      <ellipse cx="300" cy="245" rx="112" ry="98" fill="none"/>
+      <ellipse cx="258" cy="254" rx="15" ry="20" fill="#0B3A66" stroke="none"/>
+      <ellipse cx="342" cy="254" rx="15" ry="20" fill="#0B3A66" stroke="none"/>
+      <circle cx="263" cy="246" r="6" fill="#FFFFFF" stroke="none"/><circle cx="347" cy="246" r="6" fill="#FFFFFF" stroke="none"/>
+      <circle cx="225" cy="288" r="17" fill="#FB7185" opacity=".5" stroke="none"/><circle cx="375" cy="288" r="17" fill="#FB7185" opacity=".5" stroke="none"/>
+      <path d="M262 286 Q300 334 338 286 Q300 300 262 286 Z" fill="#A3233F" stroke-width="7"/>
+      <path d="M206 205 Q218 172 252 158" stroke="#FFFFFF" stroke-width="10" fill="none" opacity=".75"/>
+    </g>
+  </g>
+  <circle cx="200" cy="200" r="194" fill="none" stroke="#0B3A66" stroke-width="5" opacity=".15"/>
+</svg>
