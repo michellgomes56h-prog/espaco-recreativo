@@ -306,6 +306,10 @@ h1, h2, h3, .hero__sub, .cta h2 { text-wrap: balance; }
    5. TURNOS
    ========================================================= */
 .plans { display: grid; grid-template-columns: repeat(3, 1fr); gap: clamp(1rem, 2vw, 2rem); align-items: center; }
+.plans--two { grid-template-columns: repeat(2, minmax(0, 1fr)); max-width: 56rem; margin-inline: auto; }
+.plans__note { display: flex; flex-wrap: wrap; align-items: center; justify-content: center; gap: .4rem .5rem; margin-top: 2.25rem; text-align: center; font-weight: 700; color: var(--azul-profundo); }
+.plans__note .ico { color: var(--sol); }
+.plans__note a { color: var(--azul-eletrico-txt); text-decoration: underline; text-underline-offset: 3px; }
 .plan { position: relative; padding: 2.4rem 2rem 2rem; display: flex; flex-direction: column; gap: 1.5rem; transition: transform .45s var(--ease-pop), border-color .3s; }
 .plan:hover { transform: translateY(-8px); border-color: var(--azul-claro); }
 .plan__top { text-align: center; padding-bottom: 1.4rem; border-bottom: 2px dashed var(--azul-gelo); }
