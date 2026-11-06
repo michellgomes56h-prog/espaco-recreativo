@@ -23,9 +23,8 @@ tools/otimizar-imagens.py   gera AVIF/WebP 1x/2x/3x
 ## Pendências
 Nenhuma da cliente. Logo e astronauta (desenhos feitos para o site) foram aprovados.
 
-Publicado em https://espaco-recreativo.vercel.app
-Ao ligar o domínio próprio: troque `https://espaco-recreativo.vercel.app` em `index.html`
-(canonical, og:url, og:image, JSON-LD), `robots.txt` e `sitemap.xml`.
+Publicado em https://www.espaço-recreativo.online (técnico: www.xn--espao-recreativo-fpb.online), via Vercel.
+Domínio na Hostinger, vence em 06/11/2027, SEM renovação automática (há um lembrete agendado para 06/10/2027).
 
 Opcional: depoimentos reais (o carrossel continua no JS, pronto para voltar) e mais fotos
 (`assets/galeria/06.webp`... e um novo `<figure class="ph">` no index.html).

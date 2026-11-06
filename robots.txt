@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://espaco-recreativo.vercel.app/sitemap.xml
+Sitemap: https://www.xn--espao-recreativo-fpb.online/sitemap.xml
