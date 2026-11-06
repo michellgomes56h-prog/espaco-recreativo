@@ -12,23 +12,23 @@ e abra http://localhost:8000
 index.html              todas as seções
 assets/css/style.css    design system (tokens no :root) + seções
 assets/js/main.js       navbar, gaveta, parallax, galeria/lightbox, carrossel, FAQ
-assets/logo.png         logo (PROVISÓRIO: trocar pelo oficial)
-assets/astronauta-hero.png  mascote do hero (PROVISÓRIO: trocar pela arte oficial, PNG transparente ≥ 2400px)
+assets/logo.png         logo (desenho aprovado pela cliente)
+assets/astronauta-hero.png  mascote do hero (desenho aprovado pela cliente)
 assets/img/             versões AVIF/WebP geradas (não editar à mão)
 assets/galeria/01..12.webp  fotos placeholder da galeria
-assets/src/*.svg        fontes vetoriais do mascote e logo provisórios
+assets/src/*.svg        fontes vetoriais do mascote e do logo
 tools/otimizar-imagens.py   gera AVIF/WebP 1x/2x/3x
 ```
 
 ## Pendências
-Informações da cliente: nenhuma. Idade (0 a 10 anos), planos (contraturno, pacotes mensais e diárias),
-horário e segurança vieram do folder oficial.
+Nenhuma da cliente. Logo e astronauta (desenhos feitos para o site) foram aprovados.
 
-Do nosso lado: logo e astronauta oficiais (trocar `assets/logo.png` e `assets/astronauta-hero.png` e rodar
-`python3 tools/otimizar-imagens.py`) e o domínio definitivo.
+Publicado em https://espaco-recreativo.vercel.app
+Ao ligar o domínio próprio: troque `https://espaco-recreativo.vercel.app` em `index.html`
+(canonical, og:url, og:image, JSON-LD), `robots.txt` e `sitemap.xml`.
 
-Opcional: depoimentos reais (a seção foi retirada; o carrossel continua no JS, pronto para voltar).
-Para adicionar fotos à galeria: salve em `assets/galeria/06.webp`... e copie um `<figure class="ph">` no index.html.
+Opcional: depoimentos reais (o carrossel continua no JS, pronto para voltar) e mais fotos
+(`assets/galeria/06.webp`... e um novo `<figure class="ph">` no index.html).
 
 ## Arquivos de publicação (já prontos)
 - `404.html` página de erro no estilo do site (configure no servidor/hospedagem como página 404)
@@ -37,9 +37,6 @@ Para adicionar fotos à galeria: salve em `assets/galeria/06.webp`... e copie um
 - `robots.txt` e `sitemap.xml`
 - SEO local: dados estruturados `ChildCare` (endereço, telefone, horários, Instagram) no `<head>`
 
-**Domínio:** o site usa `https://www.espacorecreativo.com.br/` como provisório. Troque em `index.html`
-(canonical, og:url, og:image, JSON-LD), `robots.txt` e `sitemap.xml` (busque `espacorecreativo.com.br`).
-Ao trocar o logo/astronauta oficiais, regenere também os favicons e a og-image (ou peça para eu refazer).
 
 ## Qualidade verificada
 - Auditoria axe-core (WCAG 2.1 AA + boas práticas): 0 violações no desktop e no celular

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-10 -20 620 730">
-  <!-- Mascote PROVISÓRIO do Espaço Recreativo (astronauta sorrindo, fazendo joinha).
-       Substitua por /assets/astronauta-hero.png (arte oficial) e rode tools/otimizar-imagens.py -->
+  <!-- Mascote do Espaço Recreativo (astronauta sorrindo, fazendo joinha). Aprovado pela cliente.
+       Para regenerar as versões AVIF/WebP: exporte para assets/astronauta-hero.png e rode tools/otimizar-imagens.py -->
   <defs>
     <clipPath id="face"><ellipse cx="300" cy="245" rx="112" ry="98"/></clipPath>
     <linearGradient id="suit" x1="0" y1="0" x2="0" y2="1">
