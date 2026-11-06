@@ -21,16 +21,14 @@ tools/otimizar-imagens.py   gera AVIF/WebP 1x/2x/3x
 ```
 
 ## Pendências
-Busque `PENDENTE` no index.html:
-1. **Faixa etária** (FAQ "Qual a idade das crianças atendidas?")
-2. **Horários dos meios turnos** manhã e tarde (seção Turnos; hoje mostra "Período da manhã/tarde")
+Informações da cliente: nenhuma. Idade (0 a 10 anos), planos (contraturno, pacotes mensais e diárias),
+horário e segurança vieram do folder oficial.
 
 Do nosso lado: logo e astronauta oficiais (trocar `assets/logo.png` e `assets/astronauta-hero.png` e rodar
 `python3 tools/otimizar-imagens.py`) e o domínio definitivo.
 
+Opcional: depoimentos reais (a seção foi retirada; o carrossel continua no JS, pronto para voltar).
 Para adicionar fotos à galeria: salve em `assets/galeria/06.webp`... e copie um `<figure class="ph">` no index.html.
-A seção de depoimentos foi retirada (os textos eram exemplos); o código do carrossel continua pronto caso
-a cliente envie depoimentos reais.
 
 ## Arquivos de publicação (já prontos)
 - `404.html` página de erro no estilo do site (configure no servidor/hospedagem como página 404)
