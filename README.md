@@ -40,3 +40,7 @@ Opcional: depoimentos reais (o carrossel continua no JS, pronto para voltar) e m
 ## Qualidade verificada
 - Auditoria axe-core (WCAG 2.1 AA + boas práticas): 0 violações no desktop e no celular
 - Sem erros de JavaScript e sem arquivos faltando; sem rolagem horizontal de 390px a 2560px
+
+## Atualizações e cache
+Ao mudar CSS, JS ou trocar uma foto mantendo o mesmo nome, aumente o `?v=` nos links do index.html
+(ex.: `style.css?v=20261109` → `?v=20261110`). Assim os celulares baixam a versão nova na hora.
