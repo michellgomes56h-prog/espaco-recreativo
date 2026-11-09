@@ -583,10 +583,12 @@ h1, h2, h3, .hero__sub, .cta h2 { text-wrap: balance; }
   }
 }
 @media (max-width: 640px) {
-  .viv-grid { grid-template-columns: 1fr; grid-template-rows: none; grid-template-areas: none; aspect-ratio: auto; }
-  .viv { grid-area: auto !important; aspect-ratio: 4 / 3; }
-  .viv--fach { aspect-ratio: 16 / 10; }
-  .viv figcaption { left: 0; right: 0; bottom: 0; max-width: none; padding: 2.4rem 1rem .9rem; border-radius: 0; font-size: 1rem; }
-  .viv figcaption strong { font-size: 1.2rem; }
-  .viv figcaption span { font-size: .86rem; }
+  .viv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-template-areas: none; aspect-ratio: auto; gap: .6rem; }
+  .viv { grid-area: auto !important; aspect-ratio: 3 / 4; border-radius: 18px; }
+  .viv button { border-radius: 18px; }
+  .viv--fach, .viv--desc { grid-column: 1 / -1 !important; aspect-ratio: 16 / 10; }
+  .viv figcaption { left: 0; right: 0; bottom: 0; max-width: none; padding: 1.8rem .65rem .6rem; border-radius: 0; gap: .15rem; }
+  .viv figcaption strong { font-size: 1rem; gap: .35rem; }
+  .viv figcaption strong::before { width: .45rem; height: .45rem; }
+  .viv figcaption span { font-size: .72rem; line-height: 1.3; }
 }
