@@ -105,7 +105,7 @@
     <nav class="nav__links" aria-label="Principal">
       <a href="#servicos">Serviços</a>
       <a href="#turnos">Turnos</a>
-      <a href="#galeria">Galeria</a>
+      <a href="#galeria">Vivências</a>
       <a href="#faq">FAQ</a>
       <a href="#localizacao">Localização</a>
     </nav>
@@ -128,7 +128,7 @@
     <nav aria-label="Menu mobile">
       <a href="#servicos">Serviços</a>
       <a href="#turnos">Turnos</a>
-      <a href="#galeria">Galeria</a>
+      <a href="#galeria">Vivências</a>
       <a href="#faq">FAQ</a>
       <a href="#localizacao">Localização</a>
     </nav>
@@ -394,30 +394,26 @@
   </div>
 </section>
 
-<!-- ====================== 6. GALERIA ====================== -->
-<!-- Fotos reais do espaço (5). Para adicionar mais: salve como assets/galeria/06.webp... e copie um <figure class="ph">,
-     ajustando width/height, data-cat (espaco | oficinas | rotina), alt e legenda. -->
+<!-- ====================== 6. VIVÊNCIAS (galeria) ====================== -->
+<!-- Fotos reais enviadas pela cliente. Cada foto tem uma área fixa no mosaico (classes .viv--*, ver style.css).
+     Para trocar uma foto: substitua o arquivo em assets/galeria/ e ajuste width/height e o alt. -->
 <section class="section gallery-sec" id="galeria" aria-labelledby="gal-title">
   <div class="container">
     <header class="sec-head reveal">
-      <span class="eyebrow">Galeria</span>
-      <h2 id="gal-title">Conheça nosso <span class="hl">espaço</span></h2>
-      <p>Um cantinho colorido, seguro e preparado para cada fase da infância.</p>
+      <span class="eyebrow">Vivências</span>
+      <h2 id="gal-title">Cada dia, uma nova <span class="hl">vivência</span></h2>
+      <p>Aqui a criança aprende, convive, se expressa, descobre, cria e cuida. Conheça um pouco do nosso dia a dia.</p>
     </header>
 
-    <div class="filters reveal" role="toolbar" aria-label="Filtrar fotos">
-      <button class="filter is-active" data-filter="todos" aria-pressed="true">Todos</button>
-      <button class="filter" data-filter="espaco" aria-pressed="false">Espaço</button>
-      <button class="filter" data-filter="oficinas" aria-pressed="false">Oficinas</button>
-      <button class="filter" data-filter="rotina" aria-pressed="false">Rotina</button>
-    </div>
-
-    <div class="masonry" id="masonry">
-      <figure class="ph ph--wide" data-cat="espaco"><button aria-label="Ampliar foto: Nossa fachada"><img src="assets/galeria/01.webp" width="1079" height="719" loading="lazy" decoding="async" alt="Fachada do Espaço Recreativo, com o nome colorido na parede e o astronauta pintado ao lado da porta"></button><figcaption>Nossa fachada</figcaption></figure>
-      <figure class="ph" data-cat="rotina"><button aria-label="Ampliar foto: Formatura da turminha"><img src="assets/galeria/02.webp" width="1080" height="1080" loading="lazy" decoding="async" alt="Três crianças de beca e capelo azuis na formatura, com duas educadoras sorrindo atrás"></button><figcaption>Formatura da turminha</figcaption></figure>
-      <figure class="ph" data-cat="oficinas"><button aria-label="Ampliar foto: Atividade com canetinhas"><img src="assets/galeria/03.webp" width="1080" height="1080" loading="lazy" decoding="async" alt="Criança organizando canetinhas coloridas sobre uma atividade de cores"></button><figcaption>Atividade com canetinhas</figcaption></figure>
-      <figure class="ph" data-cat="oficinas"><button aria-label="Ampliar foto: Hora de colorir"><img src="assets/galeria/04.webp" width="1080" height="1080" loading="lazy" decoding="async" alt="Duas crianças colorindo desenhos na mesa de atividades"></button><figcaption>Hora de colorir</figcaption></figure>
-      <figure class="ph" data-cat="rotina"><button aria-label="Ampliar foto: Roda com a turma"><img src="assets/galeria/05.webp" width="1080" height="1080" loading="lazy" decoding="async" alt="Turma de crianças sentadas em cadeirinhas coloridas durante a roda"></button><figcaption>Roda com a turma</figcaption></figure>
+    <div class="viv-grid" id="masonry">
+      <figure class="ph viv viv--fach" data-caption="Nosso espaço: Na Av. Salgado Filho, 768, de portas abertas para receber sua família."><button aria-label="Ampliar foto: Nosso espaço"><img src="assets/galeria/01.webp" width="1079" height="719" loading="lazy" decoding="async" alt="Fachada do Espaço Recreativo, com o nome colorido na parede e o astronauta pintado ao lado da porta"></button><figcaption><strong>Nosso espaço</strong><span>Na Av. Salgado Filho, 768, de portas abertas para receber sua família.</span></figcaption></figure>
+      <figure class="ph viv viv--apre" data-caption="Aprender: Letras, números e desafios que despertam a curiosidade e o gosto por aprender."><button aria-label="Ampliar foto: Aprender"><img src="assets/galeria/02.webp" width="899" height="1599" loading="lazy" decoding="async" alt="Crianças montando palavras com letrinhas de madeira na mesa"></button><figcaption><strong>Aprender</strong><span>Letras, números e desafios que despertam a curiosidade e o gosto por aprender.</span></figcaption></figure>
+      <figure class="ph viv viv--cuid" data-caption="Cuidar: Plantar, regar e cuidar da natureza, de si e de quem está por perto."><button aria-label="Ampliar foto: Cuidar"><img src="assets/galeria/07.webp" width="1200" height="1600" loading="lazy" decoding="async" alt="Crianças colocando terra em vasos e plantando mudas"></button><figcaption><strong>Cuidar</strong><span>Plantar, regar e cuidar da natureza, de si e de quem está por perto.</span></figcaption></figure>
+      <figure class="ph viv viv--expr" data-caption="Expressar: Rodas de histórias e conversas em que cada criança tem voz e é ouvida."><button aria-label="Ampliar foto: Expressar"><img src="assets/galeria/04.webp" width="1200" height="1205" loading="lazy" decoding="async" alt="Educadora contando uma história para as crianças sentadas em roda"></button><figcaption><strong>Expressar</strong><span>Rodas de histórias e conversas em que cada criança tem voz e é ouvida.</span></figcaption></figure>
+      <figure class="ph viv viv--cria2" data-caption="Criar: Cada criação conta um pouco de quem a criança é."><button aria-label="Ampliar foto: Criar"><img src="assets/galeria/08.webp" width="897" height="1600" loading="lazy" decoding="async" alt="Bebê segurando a sua Caixa do Eu, decorada com astronautas"></button><figcaption><strong>Criar</strong><span>Cada criação conta um pouco de quem a criança é.</span></figcaption></figure>
+      <figure class="ph viv viv--desc" data-caption="Descobrir: Brincadeiras e aventuras que levam a criança a explorar o mundo ao redor."><button aria-label="Ampliar foto: Descobrir"><img src="assets/galeria/05.webp" width="1600" height="1201" loading="lazy" decoding="async" alt="Crianças fantasiadas de piratas brincando no parquinho"></button><figcaption><strong>Descobrir</strong><span>Brincadeiras e aventuras que levam a criança a explorar o mundo ao redor.</span></figcaption></figure>
+      <figure class="ph viv viv--conv" data-caption="Conviver: Brincar junto, esperar a vez e fazer amigos no dia a dia."><button aria-label="Ampliar foto: Conviver"><img src="assets/galeria/03.webp" width="1201" height="1600" loading="lazy" decoding="async" alt="Crianças pequenas sentadas lado a lado em uma brincadeira com cones coloridos"></button><figcaption><strong>Conviver</strong><span>Brincar junto, esperar a vez e fazer amigos no dia a dia.</span></figcaption></figure>
+      <figure class="ph viv viv--cria1" data-caption="Criar: Tinta, papel e imaginação para transformar ideias em arte."><button aria-label="Ampliar foto: Criar"><img src="assets/galeria/06.webp" width="1409" height="1600" loading="lazy" decoding="async" alt="Crianças pintando juntas uma cobra feita de rolinhos de papelão"></button><figcaption><strong>Criar</strong><span>Tinta, papel e imaginação para transformar ideias em arte.</span></figcaption></figure>
     </div>
 
     <div class="center reveal">
@@ -558,7 +554,7 @@
     </div>
     <nav class="footer__col" aria-label="Rodapé">
       <h2>Navegue</h2>
-      <a href="#servicos">Serviços</a><a href="#turnos">Turnos</a><a href="#galeria">Galeria</a><a href="#faq">FAQ</a>
+      <a href="#servicos">Serviços</a><a href="#turnos">Turnos</a><a href="#galeria">Vivências</a><a href="#faq">FAQ</a>
     </nav>
     <div class="footer__col">
       <h2>Contato</h2>

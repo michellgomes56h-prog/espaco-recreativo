@@ -106,7 +106,7 @@
     setTimeout(() => {
       lbImg.src = img.currentSrc || img.src;
       lbImg.alt = img.alt;
-      lbCap.textContent = $('figcaption', fig).textContent;
+      lbCap.textContent = fig.dataset.caption || $('figcaption', fig).textContent;
       lbCount.textContent = `${idx + 1}/${list.length}`;
       lbImg.onload = () => lbImg.classList.remove('is-swapping');
       if (lbImg.complete) lbImg.classList.remove('is-swapping');
