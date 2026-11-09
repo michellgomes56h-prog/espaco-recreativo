@@ -559,9 +559,9 @@ h1, h2, h3, .hero__sub, .cta h2 { text-wrap: balance; }
 .viv { min-height: 0; }
 .viv button { height: 100%; }
 .viv img { width: 100%; height: 100%; aspect-ratio: auto; object-fit: cover; }
-.viv--fach img { object-position: 50% 55%; } .viv--apre img { object-position: 50% 40%; }
-.viv--conv img { object-position: 50% 70%; } .viv--expr img { object-position: 50% 35%; }
-.viv--desc img { object-position: 50% 60%; } .viv--cria2 img { object-position: 50% 22%; }
+.viv--fach img { object-position: 50% 55%; } .viv--apre img { object-position: 50% 30%; }
+.viv--conv img { object-position: 50% 62%; } .viv--expr img { object-position: 50% 30%; }
+.viv--desc img { object-position: 50% 32%; }
 .viv figcaption {
   left: 0; right: 0; bottom: 0; max-width: none; transform: none;
   display: flex; flex-direction: column; gap: .2rem;
@@ -583,12 +583,28 @@ h1, h2, h3, .hero__sub, .cta h2 { text-wrap: balance; }
   }
 }
 @media (max-width: 640px) {
-  .viv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-template-areas: none; aspect-ratio: auto; gap: .6rem; }
-  .viv { grid-area: auto !important; aspect-ratio: 3 / 4; border-radius: 18px; }
-  .viv button { border-radius: 18px; }
+  .viv-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); grid-template-rows: none; grid-template-areas: none; aspect-ratio: auto; gap: .65rem; }
+  .viv { grid-area: auto !important; border-radius: 18px; }
+  .viv button { border-radius: 0; }
   .viv--fach, .viv--desc { grid-column: 1 / -1 !important; aspect-ratio: 16 / 10; }
-  .viv figcaption { left: 0; right: 0; bottom: 0; max-width: none; padding: 1.8rem .65rem .6rem; border-radius: 0; gap: .15rem; }
-  .viv figcaption strong { font-size: 1rem; gap: .35rem; }
-  .viv figcaption strong::before { width: .45rem; height: .45rem; }
-  .viv figcaption span { font-size: .72rem; line-height: 1.3; }
+  .viv--fach figcaption { padding: 2rem .9rem .8rem; }
+  .viv--fach figcaption strong { font-size: 1.15rem; }
+  .viv--fach figcaption span { font-size: .8rem; }
+  /* cards em dupla: foto em cima, explicação embaixo */
+  .viv:not(.viv--fach) { display: flex; flex-direction: column; background: #fff; }
+  .viv:not(.viv--fach) button { height: auto; flex: none; overflow: hidden; }
+  .viv:not(.viv--fach) img { height: auto; aspect-ratio: 1; }
+  .viv:not(.viv--fach) figcaption {
+    position: static; transform: none; background: none; padding: .7rem .75rem .9rem; gap: .25rem; color: var(--azul-profundo);
+  }
+  .viv:not(.viv--fach) figcaption strong { color: var(--azul-profundo); font-size: 1.02rem; }
+  .viv:not(.viv--fach) figcaption span { color: var(--texto); font-size: .76rem; line-height: 1.4; font-weight: 600; }
+  .viv--apre img { object-position: 50% 22%; } .viv--cuid img { object-position: 50% 45%; }
+  .viv--desc { aspect-ratio: auto; }
+  .viv:not(.viv--fach).viv--desc img { aspect-ratio: 16 / 10; object-position: 50% 32%; }
 }
+
+/* foto mostrada inteira (sem cortar), com a própria foto desfocada ao fundo */
+.viv--inteira button { position: relative; overflow: hidden; background: var(--azul-gelo); }
+.viv--inteira button::before { content: ""; position: absolute; inset: -24px; background: var(--bg) center / cover no-repeat; filter: blur(20px) saturate(1.1) brightness(.92); }
+.viv--inteira img { position: relative; object-fit: contain; object-position: 50% 50%; }
